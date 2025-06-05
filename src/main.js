@@ -7,14 +7,14 @@ import "@/assets/global.css";
 // mouting point for the whole app
 
 import App from "@/App.vue";
-import Index from "@/views/Index.vue";
+import Home from "@/views/Home.vue";
 
 // routes
 
 const routes = [
   {
     path: "/",
-    component: Index,
+    component: Home,
   }
 ];
 
