@@ -466,15 +466,15 @@
                </div>
             </div>
          </div>
-         <!-- <div class="load-more-link">
+         <div class="load-more-link">
 <a
                               target="_blank"
                               href="#"
                               class="btn"
-                           >
+                            @click="goToAbout">
                               <span>VIEW MORE</span>
                            </a>
-        </div> -->
+        </div>
          <!-- <div class="lui-bgtitle" style="top:0;">
               <span> Portfolio </span>
             </div> -->
@@ -984,6 +984,11 @@ export default {
       DotLottieVue,
    },
    name: "TypingEffect",
+   methods: {
+    goToAbout() {
+      this.$router.push('/allprojects');
+    }
+  },
    mounted() {
       const options = {
          strings: [

@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import { createWebHistory, createRouter } from "vue-router";
 
+
 // styles
 import "@/assets/global.css";
 
@@ -8,6 +9,7 @@ import "@/assets/global.css";
 
 import App from "@/App.vue";
 import Home from "@/views/Home.vue";
+import Projects from "@/views/Projects.vue"
 
 // routes
 
@@ -15,6 +17,10 @@ const routes = [
   {
     path: "/",
     component: Home,
+  },
+   {
+    path: "/allprojects",
+    component: Projects,
   }
 ];
 

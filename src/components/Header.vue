@@ -1,51 +1,61 @@
 <template>
-  <header class="header">
-        <div class="navbar-area">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-8 position-relative p-0">
-                        <div class="little-box"></div>
-                         <div class="little-box-l"></div>
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand logo" href="#">
-                              <img src="../assets/images/daisy.png" alt=""> yuwah.
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
+  <div class="navbar-area">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8 position-relative p-0">
+          <div class="little-box"></div>
+          <div class="little-box-l"></div>
 
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item" @click="scrollToAbout">
-                                        <a href="#">About //</a>
-                                    </li>
-                                    <li class="nav-item" @click="scrollToPortfolio"><a href="#">Portfolio</a> </li>
-                                    <li class="nav-item" @click="scrollToSkill"><a href="#">Skills</a></li>
-                                    <li class="nav-item" @click="scrollToContace"><a href="#">Hire Me</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <!-- navbar -->
-                         <div class="little-box-b-l"></div>
-                         <div class="little-box-b-r"></div>
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#">
+              <img src="../assets/images/daisy.png" alt=""> yuwah.
+            </a>
 
-                    </div>
-                </div>
-                <!-- row -->
+            <!-- Hamburger -->
+            <button @click="toggleMenu" class="navbar-toggler" type="button" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div :class="['sub-menu-bar', 'navbar-collapse', { open: isOpen }]">
+              <ul id="nav" class="navbar-nav ml-auto">
+                <li class="nav-item" @click="scrollToAbout">
+                  <a href="#">About //</a>
+                </li>
+                <li class="nav-item" @click="scrollToPortfolio">
+                  <a href="#">Portfolio</a>
+                </li>
+                <li class="nav-item" @click="scrollToSkill">
+                  <a href="#">Skills</a>
+                </li>
+                <li class="nav-item" @click="scrollToContace">
+                  <a href="#">Hire Me</a>
+                </li>
+              </ul>
             </div>
-            <!-- container -->
-        </div>
-        <!-- navbar area -->
-    </header>
+          </nav>
 
-    
+          <div class="little-box-b-l"></div>
+          <div class="little-box-b-r"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
 methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen;
+    },
     scrollToAbout() {
       const el = document.getElementById("about");
       if (el) {
@@ -139,5 +149,33 @@ height: calc(0.25rem * 2);
 right:-6px;
 bottom:-6px;
 position:absolute;
+}
+/* Toggle menu on small screens */
+.sub-menu-bar {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .sub-menu-bar {
+    display: none;
+    flex-direction: column;
+  }
+
+  .sub-menu-bar.open {
+    display: block;
+  }
+}
+
+/* Hamburger styling if needed */
+.navbar-toggler {
+  border: none;
+  background: none;
+}
+.toggler-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
 }
 </style>
