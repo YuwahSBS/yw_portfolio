@@ -260,9 +260,9 @@
       <div class="aboutme">
          <div class="row d-flex align-items-center">
             <div class="col-md-8">
-               <div class="d-flex align-items-center">
+               <div class="aboutsection">
                   <div
-                     class="d-flex justify-content-between align-items-center about"
+                     class="about"
                   >
                      <div class="icon">
                         <img src="../assets/images/user.png" alt="" />
@@ -273,7 +273,7 @@
                      </div>
                   </div>
                   <div
-                     class="d-flex justify-content-between align-items-center about"
+                     class="about"
                   >
                      <div class="icon">
                         <img src="../assets/images/calendar.png" alt="" />
@@ -284,7 +284,7 @@
                      </div>
                   </div>
                   <div
-                     class="d-flex justify-content-between align-items-center about"
+                     class="about"
                   >
                      <div class="icon">
                         <img src="../assets/images/check.png" alt="" />
