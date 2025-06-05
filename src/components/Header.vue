@@ -178,4 +178,7 @@ position:absolute;
   background-color: #000;
   margin: 4px 0;
 }
+@media only screen and (max-width: 767px){
+  .navbar-area{top:0;}
+}
 </style>
