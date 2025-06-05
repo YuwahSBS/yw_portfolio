@@ -1018,4 +1018,10 @@ export default {
 .fade-leave-to {
    opacity: 0;
 }
+
+@media only screen and (max-width: 767px) {
+   .dashboard_{
+        display:unset;
+    }
+}
 </style>
