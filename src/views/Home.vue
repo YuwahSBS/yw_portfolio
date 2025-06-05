@@ -5,7 +5,7 @@
       <div class="hero-inner">
          <div class="container">
             <div class="row" style="margin-top: 30px">
-               <div class="col-lg-6 co-12">
+               <div class="col-lg-7 co-12">
                   <div class="home-slider">
                      <div class="hero-text">
                         <div
@@ -34,19 +34,19 @@
                         <div class="bts">
                            <a
                               target="_blank"
-                              href="https://drive.google.com/"
+                              href="https://drive.google.com/drive/folders/1xYfyA2IepD2DYR5Zx6Qn6AHevY1yuXa8"
                               class="btn"
                            >
                               <span>Download CV</span>
                            </a>
-                           <a href="#skills-section" class="btn-lnk">
+                           <a href="#" class="btn-lnk">
                               My Skills
                            </a>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-6 col-12">
+               <div class="col-lg-5 col-12">
                   <div class="info-list">
                      <div style="width: 100%">
                      <DotLottieVue
@@ -79,9 +79,9 @@
                      <span class="circle">
                         <img src="../assets/images/pat-2.png" alt="" />
                      </span>
-                     <span class="circle2">
+                     <!-- <span class="circle2">
                         <img src="../assets/images/pat-2.png" alt="" />
-                     </span>
+                     </span> -->
                   </div>
                </div>
             </div>
@@ -428,7 +428,7 @@
             <div class="col-md-4">
                <div class="prj-item">
                   <div class="zoomin">
-                     <img src="../assets/images/portfolio4.jpg" />
+                     <img src="../assets/images/portfolio6.png" />
                   </div>
                   <div
                      class="d-flex justify-content-between align-items-center prj-content"
@@ -466,7 +466,7 @@
                </div>
             </div>
          </div>
-         <div class="load-more-link">
+         <div class="load-more-link" @click="scrollToPortfolio">
 <a
                               target="_blank"
                               href="#"
@@ -987,6 +987,12 @@ export default {
    methods: {
     goToAbout() {
       this.$router.push('/allprojects');
+    },
+     scrollToPortfolio() {
+      const el = document.getElementById("portfolio");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
     }
   },
    mounted() {
@@ -1023,6 +1029,13 @@ export default {
 .fade-leave-to {
    opacity: 0;
 }
+
+.prj-item > .zoomin > img {
+        
+         height:230px;
+         object-fit: cover;
+   
+   }
 
 @media only screen and (max-width: 767px) {
    .dashboard_{

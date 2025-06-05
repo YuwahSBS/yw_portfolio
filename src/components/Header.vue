@@ -7,8 +7,7 @@
           <div class="little-box-l"></div>
 
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand logo" href="#">
-              <img src="../assets/images/daisy.png" alt=""> yuwah.
+            <a class="navbar-brand logo" @click="gotoHome" style="cursor:pointer;">my portfolio.
             </a>
 
             <!-- Hamburger -->
@@ -55,6 +54,9 @@ export default {
 methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
+    },
+    gotoHome(){
+      this.$router.push('/');
     },
     scrollToAbout() {
       const el = document.getElementById("about");
@@ -105,7 +107,7 @@ a.logo > img{
     width: 40px;
 }
 .navbar-area {
-    top:-32px;
+    top:20px;
     background-color: transparent;
 }
 .navbar{
