@@ -135,6 +135,66 @@
                   </div>
                </div>
             </div>
+            <div class="col-md-4">
+               <div class="prj-item">
+                  <div class="zoomin">
+                     <img src="../assets/images/geely.png" />
+                  </div>
+                  <div
+                     class="d-flex justify-content-between align-items-center prj-content"
+                  >
+                     <h3>Geely Automobile</h3>
+                     <div>
+                        <a
+                           href="https://www.geelymyanmar.com"
+                           target="_blank"
+                        >
+                           <img src="../assets/images/goto.png" alt="Geely" />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="prj-item">
+                  <div class="zoomin">
+                     <img src="../assets/images/whitecottage.png" />
+                  </div>
+                  <div
+                     class="d-flex justify-content-between align-items-center prj-content"
+                  >
+                     <h3>White Cottage Restaurant</h3>
+                     <div>
+                        <a
+                           href="https://thewhitecottageyangon.com/"
+                           target="_blank"
+                        >
+                           <img src="../assets/images/goto.png" alt="The White Cottage" />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="prj-item">
+                  <div class="zoomin">
+                     <img src="../assets/images/systemative.png" />
+                  </div>
+                  <div
+                     class="d-flex justify-content-between align-items-center prj-content"
+                  >
+                     <h3>Systematic Solutions</h3>
+                     <div>
+                        <a
+                           href="https://www.systematic-solution.com"
+                           target="_blank"
+                        >
+                           <img src="../assets/images/goto.png" alt="Systematic" />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
         
          <div class="lui-bgtitle" style="top:0;">
