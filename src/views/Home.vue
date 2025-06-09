@@ -7,7 +7,7 @@
             <div class="row" style="margin-top: 30px">
                <div class="col-lg-7 co-12">
                   <div class="home-slider">
-                     <div class="hero-text">
+                     <div class="hero-text" data-aos="fade-in-left">
                         <div
                            class="lui-subtitle wow fadeInUp"
                            data-wow-delay=".3"
@@ -249,8 +249,9 @@
       </div>
    </section>
    <!-- about my story -->
-   <section class="skill" id="about">
-      <div class="heading text-center">
+   <section class="skill" id="about" data-aos="fade-up"> 
+      <div class="heading text-center"
+      >
          <h3>ABOUT</h3>
          <h4>
             <span class="my">MY</span>
@@ -321,7 +322,7 @@
                      style="height: 400px; width: 400px"
                      autoplay
                      loop
-                     src="https://lottie.host/222691f0-1d96-4d4a-a83b-ee2aba6b32e0/dGWNCsMNSX.lottie"
+                     src="https://lottie.host/5868ed33-79aa-492f-a361-88243200df70/f8DSq1Zgi0.lottie"
                   />
                </div>
             </div>
@@ -332,7 +333,7 @@
       </div>
    </section>
    <!-- portfolio -->
-   <section class="skill" id="portfolio">
+   <section class="skill" id="portfolio" data-aos="fade-up">
       <div class="heading text-center">
          <h3>PORTFOLIO</h3>
          <h4>
@@ -482,7 +483,7 @@
    </section>
 
    <!-- Experience -->
-   <section class="experience">
+   <section class="experience" data-aos="fade-up">
       <div class="container">
          <div class="heading text-center mb-5">
             <h3>RESUME</h3>
@@ -608,7 +609,7 @@
    </section>
 
    <!-- Skills -->
-   <section class="skill" id="skill">
+   <section class="skill" id="skill" data-aos="fade-up">
       <div class="container">
          <div class="heading text-center">
             <h3>SKILLS</h3>
@@ -919,7 +920,7 @@
    </section>
 
    <!-- contact -->
-   <section class="skill" id="contact">
+   <section class="skill" id="contact" data-aos="fade-up">
       <div class="heading text-center">
          <h3>GET IN TOUCH</h3>
          <h4>
