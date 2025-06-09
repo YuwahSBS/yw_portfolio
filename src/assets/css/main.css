@@ -5440,7 +5440,7 @@ a.btn {
   -webkit-border-radius: 56px;
 }
 
-a.btn:before, .btn:before, button:before {
+/* a.btn:before, .btn:before, button:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -5457,7 +5457,7 @@ a.btn:before, .btn:before, button:before {
   opacity: 0;
   z-index: -1;
   filter: blur(10px);
-}
+} */
 
 a.btn-lnk, .btn-lnk {
   padding-left: 70px;
