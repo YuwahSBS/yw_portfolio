@@ -321,7 +321,7 @@
                      style="height: 400px; width: 400px"
                      autoplay
                      loop
-                     src="https://lottie.host/222691f0-1d96-4d4a-a83b-ee2aba6b52e0/dGWNCsMNSX.lottie"
+                     src="https://lottie.host/222691f0-1d96-4d4a-a83b-ee2aba6b32e0/dGWNCsMNSX.lottie"
                   />
                </div>
             </div>
@@ -666,60 +666,60 @@
                         <div class="dashboard_">
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-1"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>HTML5</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-2"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>CSS3</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-3"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>JavaScript (ES6+)</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-4"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Typescript</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-5"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Angular</h4>
@@ -730,48 +730,48 @@
                         >
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-6"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Wordpress</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-7"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Git</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-8"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Figma/Adobe Xd</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-9"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Photoshop</h4>
@@ -787,36 +787,36 @@
                         >
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-10"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>English</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-11"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Japanese</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-12"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Korean</h4>
@@ -832,60 +832,60 @@
                         >
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-13"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Problem Solving</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-14"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Communication</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-15"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Documentation Writing</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-16"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Code Reviews</h4>
                            </div>
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-17"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Collaboration</h4>
@@ -896,12 +896,12 @@
                         >
                            <div class="skilltab text-center">
                               <svg>
-                                 <circle class="bg" cx="57" cy="57" r="52" />
+                                 <circle class="bg" cx="40" cy="40" r="32" />
                                  <circle
                                     class="meter-18"
-                                    cx="57"
-                                    cy="57"
-                                    r="52"
+                                    cx="40"
+                                    cy="40"
+                                    r="32"
                                  />
                               </svg>
                               <h4>Critical Thinking</h4>
@@ -979,22 +979,26 @@ import Typed from "typed.js"
 import Header from "../components/Header"
 import { DotLottieVue } from "@lottiefiles/dotlottie-vue"
 export default {
+    setup() {
+      const activeTab = ref("overview")
+      return { activeTab }
+   },
    components: {
       Header,
       DotLottieVue,
    },
    name: "TypingEffect",
    methods: {
-    goToAbout() {
-      this.$router.push('/allprojects');
-    },
-     scrollToPortfolio() {
-      const el = document.getElementById("portfolio");
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
+      goToAbout() {
+         this.$router.push('/allprojects');
+      },
+      scrollToPortfolio() {
+         const el = document.getElementById("portfolio");
+         if (el) {
+         el.scrollIntoView({ behavior: "smooth" });
+         }
       }
-    }
-  },
+   },
    mounted() {
       const options = {
          strings: [
@@ -1013,10 +1017,6 @@ export default {
    beforeUnmount() {
       // Clean up the Typed instance
       if (this.typed) this.typed.destroy()
-   },
-   setup() {
-      const activeTab = ref("overview")
-      return { activeTab }
    },
 }
 </script>

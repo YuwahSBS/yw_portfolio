@@ -11,6 +11,7 @@
     "@lottiefiles/dotlottie-vue": "^0.7.0",
     "@types/jquery": "^3.5.32",
     "core-js": "^3.8.3",
+    "gsap": "^3.13.0",
     "jquery": "^3.7.1",
     "typed.js": "^2.1.0",
     "vue": "^3.2.13",
