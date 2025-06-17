@@ -1,11 +1,11 @@
 <template>
    <Header></Header>
    <!-- banner -->
-   <section class="hero-area">
+   <section class="hero-area mt-0" >
       <div class="hero-inner">
          <div class="container">
-            <div class="row" style="margin-top: 30px">
-               <div class="col-lg-7 co-12">
+            <div class="row d-flex align-items-center" style="margin-top:50px;">
+               <div class="col-lg-8 co-12">
                   <div class="home-slider">
                      <div class="hero-text" data-aos="fade-in-left">
                         <div
@@ -46,18 +46,14 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-5 col-12">
+               <div class="col-lg-4 col-12">
                   <div class="info-list">
-                     <div style="width: 100%">
-                     <DotLottieVue
-                        style="height: 600px; width: 100%"
-                        autoplay
-                        loop
-                        src="https://lottie.host/bf4baec2-418f-43ba-bf66-4a3cc69fdc13/eZAZMBAsWe.lottie"
-                     />
+                     <div class="image-container">
+                        <img src="../assets/images/heroimage2.jpg" alt="Background Image" class="bg-image" />
+                        <img src="../assets/images/heroimage1.jpg" data-aos="fade-up"  alt="Foreground Image" class="fg-image" />
                      </div>
                      
-                     <ul>
+                     <!-- <ul>
                         <li>
                            <span class="num">
                               8
@@ -75,10 +71,10 @@
                               <strong>Projects</strong>
                            </span>
                         </li>
-                     </ul>
-                     <span class="circle">
+                     </ul> -->
+                     <!-- <span class="circle">
                         <img src="../assets/images/pat-2.png" alt="" />
-                     </span>
+                     </span> -->
                      <!-- <span class="circle2">
                         <img src="../assets/images/pat-2.png" alt="" />
                      </span> -->
@@ -920,7 +916,7 @@
    </section>
 
    <!-- contact -->
-   <section class="skill" id="contact" data-aos="fade-up">
+   <section class="skill" id="contact">
       <div class="heading text-center">
          <h3>GET IN TOUCH</h3>
          <h4>
@@ -929,7 +925,7 @@
          </h4>
       </div>
       <div class="row" style="margin-top: 50px">
-         <div class="col-md-4">
+         <div class="col-md-4" data-aos="fade-up" data-aos-delay="0" data-aos-easing="ease-in-out">
             <div class="numbers-item">
                <div class="icon">
                   <i class="lni lni-map"></i>
@@ -942,7 +938,7 @@
                </div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">
             <div class="numbers-item">
                <div class="icon">
                   <i class="lni lni-envelope"></i>
@@ -955,7 +951,7 @@
                </div>
             </div>
          </div>
-         <div class="col-md-4">
+         <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in-out">
             <div class="numbers-item">
                <div class="icon">
                   <i class="lni lni-phone"></i>
@@ -1037,6 +1033,33 @@ export default {
          object-fit: cover;
    
    }
+
+   a.btn{
+      transition: all 0.2s ease-in-out;
+   }
+
+   a.btn:hover{
+      background-color: #29a587;
+      color: #fff !important;
+   }
+
+   /* .fg-image{
+        width: 300px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .fg-image:hover {
+      animation: smoothShake 1s infinite;
+    }
+
+    @keyframes smoothShake {
+      0%   { transform: translate(0px, 0px); }
+      25%  { transform: translate(2px, -2px); }
+      50%  { transform: translate(-2px, 2px); }
+      75%  { transform: translate(2px, 2px); }
+      100% { transform: translate(0px, 0px); }
+   } */
 
 @media only screen and (max-width: 767px) {
    .dashboard_{

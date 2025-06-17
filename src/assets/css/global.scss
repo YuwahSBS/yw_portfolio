@@ -47,13 +47,13 @@ section {
 }
 .info-list ul li:nth-child(1) {
   position: absolute;
-  bottom: 36%;
-  right: 0;
+  bottom: 40%;
+  right: -29px;
 }
 .info-list ul li:nth-child(2) {
   position: absolute;
-  bottom: 30%;
-  left: 0;
+  bottom: 28%;
+  left: -26px;
 }
 span.circle {
   right: 0;
@@ -75,8 +75,11 @@ span.circle2 {
   }
 }
 .hero-area {
-  background-color: transparent;
-  background-image: linear-gradient(0deg, #ffffff 0%, #f0ebe3 100%);
+  //background-color: transparent;
+  //background-image: linear-gradient(0deg, #ffffff 0%, #f0ebe3 100%);
+  background: linear-gradient(50deg, rgba(247, 241, 247, .2) 30%, rgba(250, 178, 255, .2) 65%, rgba(25, 4, 229, .2) 100%);
+  padding-top:40px;
+  padding-bottom: 40px;
 }
 .lui-bgtitle {
   position: relative;
@@ -155,7 +158,7 @@ span.circle2 {
   left: 0;
   width: 8rem;
   z-index: 20;
-  background-image: linear-gradient(to right, #fefefe, transparent);
+  background-image: linear-gradient(to right, #faf8fa80, transparent);
 }
 .bg-gradient-to-l {
   pointer-events: none;
@@ -165,7 +168,7 @@ span.circle2 {
   right: 0;
   width: 8rem;
   z-index: 20;
-  background-image: linear-gradient(to left, #fefefe, transparent);
+  background-image: linear-gradient(to left, #faecfb6b, transparent);
 }
 .duration-300 {
   transition-duration: 0.3s;
@@ -196,6 +199,7 @@ span.circle2 {
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 30px;
+  box-shadow: .959px 10.958px 36.18px 17.82px rgba(0,0,0,.03);
   div.zoomin {
     overflow: hidden;
     img {
@@ -211,12 +215,12 @@ span.circle2 {
   .prj-content {
     padding: 15px 0px 00px;
     h3 {
-      font-size: 23px;
+      font-size: 18px;
       color: #000;
     }
     a {
       img {
-        width: 18px;
+        width: 14px;
       }
     }
   }
@@ -226,6 +230,9 @@ span.circle2 {
   margin-top: 25px;
   text-align: center;
   z-index: 2;
+}
+.load-more-link:hover{
+  color:#000;
 }
 .aboutme {
   p {
@@ -246,7 +253,7 @@ span.circle2 {
   .icon {
     margin-right: 15px;
     img {
-      width: 25px;
+      width: 21px;
     }
   }
 }
@@ -707,6 +714,41 @@ svg {
     color: #fff;
   }
 }
+
+.image-container {
+  position: relative;
+  width: 100%;
+  margin: 100px auto;
+  height: 350px;
+  z-index: -1;
+}
+
+.bg-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.fg-image {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  z-index: 2;
+  
+  /* AOS animation */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+[data-aos="fade-up"] {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
 @media only screen and (max-width: 767px) {
   .navbar-area {
     top: 0;

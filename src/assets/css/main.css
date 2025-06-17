@@ -21,7 +21,8 @@ body {
   color: #000;
   overflow-x: hidden;
   font-size: 14px;
-  background-color: rgb(240, 235, 227);
+  background-color: #fafafa;
+  /* background-color: rgb(240, 235, 227); */
 }
 
 p {
@@ -1972,7 +1973,6 @@ ol {
 
 .hero-area .hero-text {
   float: none;
-  margin-top: 220px;
 }
 
 .hero-area .hero-text h1 {
@@ -5490,7 +5490,7 @@ a.btn-lnk:before, .btn-lnk:before {
 a.btn:hover,
 .btn:hover,
 button:hover {
-  color: #FFF;
+  color: #000;
 }
 
 a.btn:hover:before,
