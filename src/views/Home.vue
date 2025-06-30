@@ -1,1069 +1,1527 @@
 <template>
-   <Header></Header>
-   <!-- banner -->
-   <section class="hero-area mt-0" >
-      <div class="hero-inner">
-         <div class="container">
-            <div class="row d-flex align-items-center" style="margin-top:50px;">
-               <div class="col-lg-8 co-12">
-                  <div class="home-slider">
-                     <div class="hero-text" data-aos="fade-in-left">
-                        <div
-                           class="lui-subtitle wow fadeInUp"
-                           data-wow-delay=".3"
-                           style="visibility: visible; animation-name: fadeInUp"
-                        >
-                           <span>
-                              Hello,
-                              <b>my name is YU WAH</b>
-                           </span>
+     <!-- tpm-header-area start -->
+    <header class="tmp-header-area-start header-one header--sticky header--transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-content">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img class="logo-dark" src="../assets/images/images/white-logo-reeni.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                                <img class="logo-white" src="../assets/images/images/logo-white.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                            </a>
                         </div>
-                        <div
-                           class="label lui-subtitle d-flex align-items-center"
-                        >
-                           <div class="pt-2">I'm a</div>
-                           <strong>
-                              <div class="text" ref="typedElement"></div>
-                           </strong>
-                        </div>
-                        <p class="wow fadeInUp" data-wow-delay=".5s">
-                           From Myanmar, Yangon. I have rich experience in Front
-                           End web development and design, also I am good at
-                           wordpress. I love to talk with you about our unique.
-                        </p>
-                        <div class="bts">
-                           <a
-                              target="_blank"
-                              href="https://drive.google.com/drive/folders/1xYfyA2IepD2DYR5Zx6Qn6AHevY1yuXa8"
-                              class="btn"
-                           >
-                              <span>Download CV</span>
-                           </a>
-                           <a href="#" class="btn-lnk">
-                              My Skills
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-12">
-                  <div class="info-list">
-                     <div class="image-container">
-                        <img src="../assets/images/heroimage2.jpg" alt="Background Image" class="bg-image" />
-                        <img src="../assets/images/heroimage1.jpg" data-aos="fade-up"  alt="Foreground Image" class="fg-image" />
-                     </div>
-                     
-                     <!-- <ul>
-                        <li>
-                           <span class="num">
-                              8
-                              <strong>+</strong>
-                           </span>
-                           <span class="value">
-                              Years of
-                              <strong>Experience</strong>
-                           </span>
-                        </li>
-                        <li>
-                           <span class="num">50+</span>
-                           <span class="value">
-                              Completed
-                              <strong>Projects</strong>
-                           </span>
-                        </li>
-                     </ul> -->
-                     <!-- <span class="circle">
-                        <img src="../assets/images/pat-2.png" alt="" />
-                     </span> -->
-                     <!-- <span class="circle2">
-                        <img src="../assets/images/pat-2.png" alt="" />
-                     </span> -->
-                  </div>
-               </div>
-            </div>
+                        <nav class="tmp-mainmenu-nav d-none d-xl-block">
+                            <ul class="tmp-mainmenu">
+                                <li>
+                                    <a href="#" >Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" @click="scrollToAbout">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" @click="scrollToPortfolio">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#" @click="scrollToSkill">Skills</a>
+                                </li>
+                               
+                                <li>
+                                    <a href="#" @click="scrollToContace">Contact Us</a>
+                                </li>
+                            </ul>
 
-            <div class="lui-bgtitle" style="top: -84px">
-               <span>Web Developer</span>
+                        </nav>
+                        <div class="tmp-header-right">
+                          
+                            <div class="actions-area">
+                                <div class="tmp-side-collups-area d-none d-xl-block">
+                                    <button class="tmp-menu-bars tmp_button_active"><i class="fa-regular fa-bars-staggered"></i></button>
+                                </div>
+                                <div class="tmp-side-collups-area d-block d-xl-none" @click="toggleMenu">
+                                    <button class="tmp-menu-bars humberger_menu_active"><i class="fa-regular fa-bars-staggered"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="skill" style="margin-top: -41px">
-         <div class="relative">
-            <div class="bg-gradient-to-r"></div>
-            <div class="bg-gradient-to-l"></div>
-            <div class="d-flex animate-scroll gap-5">
-               <div
-                  class="d-flex align-items-center gap-2 group transition-all duration-300"
-               >
-                  <img
-                     src="../assets/images/HTML5.svg"
-                     alt="html5"
-                     class="transition-transform opacity-60"
-                     width="30"
-                     height="30"
-                     loading="lazy"
-                  />
-                  <span class="text-lg">HTML5</span>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/CSS3.svg"
-                        alt="css3"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">CSS3</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/tailwindcss.svg"
-                        alt="tailwind"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">Tailwind</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/javaScript.svg"
-                        alt="javascript"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">JS</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/Figma.svg"
-                        alt="figma"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">Figma</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/typeScript.svg"
-                        alt="typescript"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">Typescript</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/vue.svg"
-                        alt="vue"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">VUE</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/angular-icon.svg"
-                        alt="angular"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">Angular</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/adobe-photoshop.svg"
-                        alt="adobe-photoshop"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">Photoshop</span>
-                  </div>
-               </div>
-               <div class="d-flex animate-scroll">
-                  <div
-                     class="d-flex align-items-center gap-2 group transition-all duration-300"
-                  >
-                     <img
-                        src="../assets/images/git.svg"
-                        alt="git"
-                        class="transition-transform opacity-60"
-                        width="30"
-                        height="30"
-                        loading="lazy"
-                     />
-                     <span class="text-lg">Git</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- about my story -->
-   <section class="skill" id="about" data-aos="fade-up"> 
-      <div class="heading text-center"
-      >
-         <h3>ABOUT</h3>
-         <h4>
-            <span class="my">MY</span>
-            <span class="talent">Story</span>
-         </h4>
-      </div>
-      <div class="aboutme">
-         <div class="row d-flex align-items-center">
-            <div class="col-md-8">
-               <div class="aboutsection">
-                  <div
-                     class="about"
-                  >
-                     <div class="icon">
-                        <img src="../assets/images/user.png" alt="" />
-                     </div>
-                     <div>
-                        <p>AGE</p>
-                        <p>32 years</p>
-                     </div>
-                  </div>
-                  <div
-                     class="about"
-                  >
-                     <div class="icon">
-                        <img src="../assets/images/calendar.png" alt="" />
-                     </div>
-                     <div>
-                        <p>EXPERIENCE</p>
-                        <p>8+ years</p>
-                     </div>
-                  </div>
-                  <div
-                     class="about"
-                  >
-                     <div class="icon">
-                        <img src="../assets/images/check.png" alt="" />
-                     </div>
-                     <div>
-                        <p>PROJECTS COMPLETED</p>
-                        <p>50+</p>
-                     </div>
-                  </div>
-               </div>
-               <p>
-                  Hello! I'm Yu Wah, a passionate Frontend Developer with 8+
-                  years of experience specializing in Angular, Vue and wordpress
-                  with a solid foundation in UI/UX design. I've worked on a
-                  range of projects, including admin dashboards, e-commerce
-                  platforms, different kinds of websites, and job seeker site. I
-                  specialize in building responsive, user-friendly websites
-                  using Angular, Vue , Wordpress and frontend frameworks like
-                  Tailwind CSS, Bootstrap.
-               </p>
-               <p>
-                  I have experience with other frontend tools and libraries that
-                  help enhance the functionality and design of my projects. I
-                  enjoy creating responsive layouts and optimizing performance,
-                  and I'm always excited to tackle new frontend challenges.If
-                  you’re looking for a frontend developer with experience in
-                  both UI/UX design and web development, feel free to get in
-                  touch!
-               </p>
-            </div>
-            <div class="col-md-4">
-               <div style="width: 100%; height: 400px">
-                  <DotLottieVue
-                     style="height: 400px; width: 400px"
-                     autoplay
-                     loop
-                     src="https://lottie.host/5868ed33-79aa-492f-a361-88243200df70/f8DSq1Zgi0.lottie"
-                  />
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="lui-bgtitle" style="top: -130px">
-         <span>My Story</span>
-      </div>
-   </section>
-   <!-- portfolio -->
-   <section class="skill" id="portfolio" data-aos="fade-up">
-      <div class="heading text-center">
-         <h3>PORTFOLIO</h3>
-         <h4>
-            <span class="my">MY</span>
-            <span class="talent">Cases</span>
-         </h4>
-      </div>
-      <div class="prj">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="prj-item">
-                  <div class="zoomin">
-                     <img src="../assets/images/portfolio1.jpg" />
-                  </div>
-                  <div
-                     class="d-flex justify-content-between align-items-center prj-content"
-                  >
-                     <h3>Job Search Portal</h3>
-                     <div>
-                        <a href="https://www.jobclick.com.mm" target="_blank">
-                           <img
-                              src="../assets/images/goto.png"
-                              alt="Job Click"
-                           />
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="prj-item">
-                  <div class="zoomin">
-                     <img src="../assets/images/portfolio2.jpg" />
-                  </div>
-                  <div
-                     class="d-flex justify-content-between align-items-center prj-content"
-                  >
-                     <h3>Learning Online Portal</h3>
-                     <div>
-                        <a href="https://kudostoyou.com.mm" target="_blank">
-                           <img
-                              src="../assets/images/goto.png"
-                              alt="Kudos To You"
-                           />
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="prj-item">
-                  <div class="zoomin">
-                     <img src="../assets/images/portfolio3.jpg" />
-                  </div>
-                  <div
-                     class="d-flex justify-content-between align-items-center prj-content"
-                  >
-                     <h3>Real Estate Portal</h3>
-                     <div>
-                        <a
-                           href="https://soesanrealestate.com.mm/"
-                           target="_blank"
-                        >
-                           <img
-                              src="../assets/images/goto.png"
-                              alt="Soe San Lynn Real Estate"
-                           />
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="prj-item">
-                  <div class="zoomin">
-                     <img src="../assets/images/portfolio4.jpg" />
-                  </div>
-                  <div
-                     class="d-flex justify-content-between align-items-center prj-content"
-                  >
-                     <h3>Air Ticketing</h3>
-                     <div>
-                        <a href="https://ticket.com.mm/" target="_blank">
-                           <img
-                              src="../assets/images/goto.png"
-                              alt="Columbus Air Ticket"
-                           />
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="prj-item">
-                  <div class="zoomin">
-                     <img src="../assets/images/portfolio6.png" />
-                  </div>
-                  <div
-                     class="d-flex justify-content-between align-items-center prj-content"
-                  >
-                     <h3>ERP Product</h3>
-                     <div>
-                        <a href="#" target="_blank">
-                           <img
-                              src="../assets/images/goto.png"
-                              alt="Smart ERP"
-                           />
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="prj-item">
-                  <div class="zoomin">
-                     <img src="../assets/images/portfolio5.jpg" />
-                  </div>
-                  <div
-                     class="d-flex justify-content-between align-items-center prj-content"
-                  >
-                     <h3>Gaullac Website</h3>
-                     <div>
-                        <a
-                           href="https://gaullacmommyanmar.com/"
-                           target="_blank"
-                        >
-                           <img src="../assets/images/goto.png" alt="Gaullac" />
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="load-more-link" @click="scrollToPortfolio">
-<a
-                              target="_blank"
-                              href="#"
-                              class="btn"
-                            @click="goToAbout">
-                              <span>VIEW MORE</span>
-                           </a>
         </div>
-         <!-- <div class="lui-bgtitle" style="top:0;">
-              <span> Portfolio </span>
-            </div> -->
-      </div>
-   </section>
+    </header>
+    <!-- tpm-header-area end -->
+    <div class="d-none d-xl-block">
+        <div class="tmp-sidebar-area tmp_side_bar">
+            <div class="inner">
+                <div class="top-area">
+                    <a href="#" class="logo">
+                        <img class="logo-dark" src="../assets/images/images/white-logo-reeni.png" alt="yw-portfolio">
+                        <img class="logo-white" src="../assets/images/images/logo-white.png" alt="yw-portfolio">
+                    </a>
+                    <div class="close-icon-area">
+                        <button class="tmp-round-action-btn close_side_menu_active">
+                            <i class="fa-sharp fa-light fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="image-area-feature">
+                        <a href="#">
+                            <img src="../assets/images/images/man.png" alt="yw-logo">
+                        </a>
+                    </div>
+                    <h5 class="title mt--30">Freelancer delivering exceptional Webflow, and Next.js solutions.</h5>
+                    <p class="disc">
+                        From Myanmar, Yangon. I have rich experience in Front End web development and design, also I am good at wordpress. 
+                        I love to talk with you about our unique.
+                    </p>
+                    <div class="short-contact-area">
+                        <!-- single contact information -->
+                        <div class="single-contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="information tmp-link-animation">
+                                <span>Call Now</span>
+                                <a href="#" class="number">+959 4421 488 68 </a>
+                            </div>
+                        </div>
+                        <!-- single contact information end -->
 
-   <!-- Experience -->
-   <section class="experience" data-aos="fade-up">
-      <div class="container">
-         <div class="heading text-center mb-5">
-            <h3>RESUME</h3>
-            <h4>
-               <span class="my">MY</span>
-               <span class="talent">Experience</span>
-            </h4>
-         </div>
+                        <!-- single contact information -->
+                        <div class="single-contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="information tmp-link-animation">
+                                <span>Mail Us</span>
+                                <a href="#" class="number">yuwahtetaung6@gmail.com</a>
+                            </div>
+                        </div>
+                        <!-- single contact information end -->
 
-         <div class="row">
-            <div class="col-md-6">
-               <div class="">
-                  <div class="d-flex align-items-center etitle">
-                     <div class="icon">
-                        <i class="lni lni-briefcase"></i>
-                     </div>
-                     <div class="etitle_">
-                        <span>Experience</span>
-                     </div>
-                  </div>
-                  <div class="timeline">
-                     <div class="timeline-container timeline-right">
-                        <div class="timeline-content">
-                           <p class="timeline-date">2021 - Present</p>
-                           <p class="timeline-position">
-                              Senior Front End/ Wordpress Developer
-                           </p>
-                           <p class="timeline-copy sqsrte-large">
-                              As a front end developer, I build user-friendly
-                              websites with Angular and wordpress CMS framework.
-                              I worked closely with designers and backend
-                              developers to create seamless experiences for
-                              users.
-                           </p>
+                        <!-- single contact information -->
+                        <div class="single-contact">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <div class="information tmp-link-animation">
+                                <span>My Address</span>
+                                <span class="number">Yangon, Myanmar</span>
+                            </div>
                         </div>
-                     </div>
-                     <div class="timeline-container timeline-right">
-                        <div class="timeline-content">
-                           <p class="timeline-date">2019 - 2021</p>
-                           <p class="timeline-position">Wordpress Developer</p>
-                           <p class="timeline-copy sqsrte-large">
-                              Skilled in HTML, CSS, JavaScript, with a strong
-                              understanding of theme and plugin development.
-                              Experienced in optimizing website speed, security,
-                              and SEO to enhance user experience.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="timeline-container timeline-right">
-                        <div class="timeline-content">
-                           <p class="timeline-date">2017 - 2018</p>
-                           <p class="timeline-position">
-                              Web / Graphic Designer
-                           </p>
-                           <p class="timeline-copy sqsrte-large">
-                              Design and develop visually appealing,
-                              user-friendly websites. Create wireframes,
-                              prototypes, and mockups using tools like Adobe XD
-                              or Photoshop. Ensure websites are responsive,
-                              mobile-friendly, and optimized for all devices.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-               <div class="">
-                  <div class="d-flex align-items-center etitle">
-                     <div class="icon">
-                        <i class="lni lni-graduation"></i>
-                     </div>
-                     <div class="etitle_">
-                        <span>Education</span>
-                     </div>
-                  </div>
-                  <div class="timeline">
-                     <div class="timeline-container timeline-right">
-                        <div class="timeline-content">
-                           <p class="timeline-date">2018</p>
-                           <p class="timeline-position">
-                              Bachelor of Engineering
-                           </p>
-                           <p class="timeline-copy sqsrte-large">
-                              West Yangon Technogical University
-                           </p>
-                        </div>
-                     </div>
-                     <div class="timeline-container timeline-right">
-                        <div class="timeline-content">
-                           <p class="timeline-date">2016</p>
-                           <p class="timeline-position">
-                              Bachelor of Technology
-                           </p>
-                           <p class="timeline-copy sqsrte-large">
-                              West Yangon Technological University
-                           </p>
-                        </div>
-                     </div>
-                     <div class="timeline-container timeline-right">
-                        <div class="timeline-content">
-                           <p class="timeline-date">2021</p>
-                           <p class="timeline-position">
-                              Frontend Web Development (Certification)
-                           </p>
-                           <p class="timeline-copy sqsrte-large">
-                              Fronted Development certification program offers a
-                              comprehensive curriculum covering HTML, CSS,
-                              JavaScript, and react, ensuring students are well
-                              prepared for employment in fronted development
-                              roles. with a focus on practical skills and
-                              real-world projects, students acquire the
-                              expertise needed to succeed in the industry upon
-                              completion of the program.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+        </div>
+        <a class="overlay_close_side_menu close_side_menu_active" href="javascript:void(0);"></a>
+    </div>
 
-   <!-- Skills -->
-   <section class="skill" id="skill" data-aos="fade-up">
-      <div class="container">
-         <div class="heading text-center">
-            <h3>SKILLS</h3>
-            <h4>
-               <span class="my">MY</span>
-               <span class="talent">Professional</span>
-            </h4>
-            <p class="body">
-               I provide a full range of frontend development services focused
-               on delivering functional and aesthetically pleasing websites.
-            </p>
-         </div>
-         <div class="skill-tabs">
-            <!-- Static Tab Buttons -->
-            <ul class="nav nav-tabs justify-content-center">
-               <li class="nav-item">
-                  <button
-                     class="nav-link"
-                     :class="{ active: activeTab === 'overview' }"
-                     @click="activeTab = 'overview'"
-                  >
-                     TECHNICAL
-                  </button>
-               </li>
-               <li class="nav-item">
-                  <button
-                     class="nav-link"
-                     :class="{ active: activeTab === 'profile' }"
-                     @click="activeTab = 'profile'"
-                  >
-                     LANGUAGE
-                  </button>
-               </li>
-               <li class="nav-item">
-                  <button
-                     class="nav-link"
-                     :class="{ active: activeTab === 'settings' }"
-                     @click="activeTab = 'settings'"
-                  >
-                     SOFT SKILLS
-                  </button>
-               </li>
-            </ul>
+    <div class="d-block d-xl-none">
+        <div class="tmp-popup-mobile-menu" :class="{ active: isMenuActive }">
+            <div class="inner">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="#" class="logo-area">
+                            <img class="logo-dark" src="../assets/images/images/white-logo-reeni.png" alt="yw-portfolio">
+                            <img class="logo-white" src="../assets/images/images/logo-white.png" alt="yw-portfolio">
+                        </a>
 
-            <!-- Tab Content -->
-             <div class="row">
-               <div class="col-md-12">
-                     <div class="tab-content">
-               <transition name="fade" mode="out-in">
-                  <div :key="activeTab">
-                     <div
-                        v-if="activeTab === 'overview'"
-                        class="tab-pane active show"
-                     >
-                        <div class="dashboard_">
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-1"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>HTML5</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-2"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>CSS3</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-3"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>JavaScript (ES6+)</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-4"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Typescript</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-5"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Angular</h4>
-                           </div>
-                        </div>
-                        <div
-                           class="dashboard_ mt-3"
-                        >
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-6"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Wordpress</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-7"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Git</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-8"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Figma/Adobe Xd</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-9"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Photoshop</h4>
-                           </div>
-                        </div>
-                     </div>
-                     <div
-                        v-else-if="activeTab === 'profile'"
-                        class="tab-pane active show"
-                     >
-                        <div
-                           class="dashboard d-flex justify-content-center mt-3"
-                        >
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-10"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>English</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-11"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Japanese</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-12"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Korean</h4>
-                           </div>
-                        </div>
-                     </div>
-                     <div
-                        v-else-if="activeTab === 'settings'"
-                        class="tab-pane active show"
-                     >
-                        <div
-                           class="dashboard d-flex justify-content-center mt-3"
-                        >
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-13"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Problem Solving</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-14"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Communication</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-15"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Documentation Writing</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-16"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Code Reviews</h4>
-                           </div>
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-17"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Collaboration</h4>
-                           </div>
-                        </div>
-                        <div
-                           class="dashboard d-flex justify-content-center mt-3"
-                        >
-                           <div class="skilltab text-center">
-                              <svg>
-                                 <circle class="bg" cx="40" cy="40" r="32" />
-                                 <circle
-                                    class="meter-18"
-                                    cx="40"
-                                    cy="40"
-                                    r="32"
-                                 />
-                              </svg>
-                              <h4>Critical Thinking</h4>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </transition>
-            </div>
-               </div>
-             </div>
-            
-         </div>
-      </div>
-   </section>
+                    </div>
+                    <div class="close-menu" @click="closeMenu">
+                        <button class="close-button tmp-round-action-btn">
+                            <i class="fa-sharp fa-light fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="tmp-mainmenu">
+                    <li>
+                        <a href="#">Home
+                        </a>
+                    </li>
+                    <li>
+                        <a @click="scrollToAbout">About</a>
+                    </li>
+                    <li>
+                        <a href="#" @click="scrollToPortfolio">Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" @click="scrollToSkill">Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a @click="scrollToContace">Contact</a>
+                    </li>
+                    
+                </ul>
 
-   <!-- contact -->
-   <section class="skill" id="contact">
-      <div class="heading text-center">
-         <h3>GET IN TOUCH</h3>
-         <h4>
-            <span class="my">Let's</span>
-            <span class="talent">Talk About Ideas</span>
-         </h4>
-      </div>
-      <div class="row" style="margin-top: 50px">
-         <div class="col-md-4" data-aos="fade-up" data-aos-delay="0" data-aos-easing="ease-in-out">
-            <div class="numbers-item">
-               <div class="icon">
-                  <i class="lni lni-map"></i>
-               </div>
-               <div class="atitle">
-                  <span>Address</span>
-               </div>
-               <div class="lui-text">
-                  <span>Yangon, Myanmar.</span>
-               </div>
+<!-- 
+                <div class="social-wrapper mt--40">
+                    <span class="subtitle">find with me</span>
+                    <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div> -->
+                <!-- social area end -->
+
+
+
             </div>
-         </div>
-         <div class="col-md-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">
-            <div class="numbers-item">
-               <div class="icon">
-                  <i class="lni lni-envelope"></i>
-               </div>
-               <div class="atitle">
-                  <span>Email</span>
-               </div>
-               <div class="lui-text">
-                  <span>yuwah.sm@gmail.com</span>
-               </div>
+        </div>
+    </div>
+
+
+    <!-- tmp banner area start -->
+    <div class="rpp-banner-two-area">
+        <div class="container">
+            <div class="banner-two-main-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="banner-right-content">
+                            <div class="main-img">
+                                <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="../assets/images/images/banner-user-image-two.png" alt="banner-img">
+                                <h2 class="banner-big-text-1 up-down-2">Web Designer</h2>
+                                <h2 class="banner-big-text-2 up-down">Frontend Developer</h2>
+                                <div class="benner-two-bg-red-img">
+                                    <img src="../assets/images/images/banner-user-image-two-red-bg.png" alt="red-img">
+                                </div>
+                                <div class="logo-under-img-wrap">
+                                    <div class="logo-under-img">
+                                        <img src="../assets/images/images/logo-under-image.png" alt="logo-under-image">
+                                    </div>
+                                    <div class="logo-under-img-2">
+                                        <img src="../assets/images/images/logo-under-image-2.png" alt="logo-under-image">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 mt--100">
+                        <div class="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">I'm a</div>
+                        <div class="inner">
+                     
+                        <div class="wrapper">
+                            <ul class="dynamic-txts">
+                                <li><span>Frontend Developer</span></li>
+                                <li><span>WordPress Developer</span></li>
+                                <li><span>Web Designer</span></li>
+                                <li><span>UI/UX Designer</span></li>
+                            </ul>
+                            </div>
+                            <!-- <span class="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">I am</span>
+                            <h1 class="title tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                Ralph Edwards <br>
+                                
+                                <span class="header-caption">
+                                    <span class="cd-headline clip is-full-width">
+                                        <span class="cd-words-wrapper dynamic-text">
+                                            <b class="is-visible theme-gradient">Web Designer</b>
+                                            <b class="is-hidden theme-gradient">Frontend Developer</b>
+                                            <b class="is-hidden theme-gradient">UI/UX Designer</b>
+                                            <b class="is-hidden theme-gradient">Wordpress Developer</b>
+                                        </span>
+                                </span>
+                                </span>
+                            </h1> -->
+                            <p class="disc tmp-scroll-trigger tmp-title-split tmp-fade-in animation-order-3">
+                                From Myanmar, Yangon. I have rich experience in <span>Front End</span> web development and <span>design</span>, also I am good at <span>wordpress</span>. 
+                                I love to talk with you about our unique.
+                            </p>
+                            <div class="button-area-banner-two tmp-scroll-trigger tmp-fade-in animation-order-4">
+
+                                <a class="tmp-btn hover-icon-reverse radius-round" @click="scrollToAbout">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">More About Us</span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-         </div>
-         <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in-out">
-            <div class="numbers-item">
-               <div class="icon">
-                  <i class="lni lni-phone"></i>
-               </div>
-               <div class="atitle">
-                  <span>Phone</span>
-               </div>
-               <div class="lui-text">
-                  <span>+959 442 148 868</span>
-               </div>
+        </div>
+        <div class="banner-shape-two">
+            <img src="../assets/images/images/banner-shape-two.png" alt="">
+        </div>
+    </div>
+    <!-- tmp banner area end -->
+
+    <!-- tmp text para start -->
+    <div class="about-content-area">
+        <div class="container tmp-section-gap">
+            <div class="text-para-doc-wrap">
+                <h2 class="text-para-documents" ref="scrollSplit" >
+                    Hello! I'm Yu Wah, a passionate Frontend Developer with 8+ years of experience specializing in <span>Angular</span>, 
+                    <span>Vue</span>, <span>React</span> and <span>wordpress</span> with a solid foundation in <span>UI/UX design</span>. I've worked on a range of projects, including admin dashboards, 
+                    e-commerce platforms, different kinds of websites, and job seeker site.
+                </h2>
+                <div class="right-bg-text-para">
+                    <img src="../assets/images/images/right-bg-text-para-doc.png" alt="">
+                </div>
+                <div class="left-bg-text-para">
+                    <img src="../assets/images/images/left-bg-text-para-doc.png" alt="">
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="lui-bgtitle" style="top: 0">
-         <span>Contact Me</span>
-      </div>
-   </section>
+        </div>
+    </div>
+    <!-- tmp text para end -->
+
+    <!-- tmp About Me Start -->
+    <section class="about-us-area">
+        <div class="container">
+            <div class="row align-items-center" ref="box" style="height: 100vh;">
+                <div class="col-lg-6">
+                    <div class="about-us-left-content-wrap bg-vactor-one">
+                        <div class="years-of-experience-card tmp-scroll-trigger tmp-fade-in animation-order-1">
+                            <h2 class="counter card-title"><span class="odometer" data-count="10">8</span>+
+                            </h2>
+                            <p class="card-para">years of experience</p>
+                        </div>
+                        <div class="design-card tmp-scroll-trigger tmp-fade-in animation-order-2">
+                            <div class="design-card-img">
+                                <div class="icon"><i class="fa-sharp fa-thin fa-lock"></i></div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Web Projects</h3>
+                                <p class="card-para">50+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" ref="container">
+                    <div class="about-us-right-content-wrap">
+                        <div class="section-head text-align-left mb--50" ref="content">
+                            <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <span class="subtitle">About Me</span>
+                            </div>
+                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">My Story</h2>
+                            <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3"> I specialize in building responsive, user-friendly websites using Angular, Vue , Wordpress and frontend frameworks like Tailwind CSS, Bootstrap. I have experience with other frontend tools and libraries that help enhance the functionality and design of my projects. I enjoy creating responsive layouts and optimizing performance, and I'm always excited to tackle new frontend challenges.If you’re looking for a frontend developer with experience in both UI/UX design and web development, feel free to get in touch!</p>
+                        </div>
+                        <!-- <div class="about-us-section-card row g-5">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="card-head">
+                                        <div class="logo-img">
+                                            <img src="../assets/images/images/logo-1.svg" alt="logo">
+                                        </div>
+                                        <h3 class="card-title">Business Solutions</h3>
+                                    </div>
+                                    <p class="card-para">
+                                        I have experience with other frontend tools and libraries that help enhance the functionality and design of my projects. 
+                I enjoy creating responsive layouts and optimizing performance, and I'm always excited to tackle new frontend challenges.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
+                                    <div class="card-head">
+                                        <div class="logo-img">
+                                            <img src="../assets/images/images/logo-2.svg" alt="logo">
+                                        </div>
+                                        <h3 class="card-title">Profit Partners</h3>
+                                    </div>
+                                    <p class="card-para">
+                                        If you’re looking for a frontend developer with experience in both UI/UX design and web development, feel free to get in touch!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="about.html">
+                                <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Read More About Me</span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tmp About Me end -->
+
+
+    <section class="resume-section tmp-section-gapTop" id="resume-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-header mb--50 tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        <h2 class="section-title"><i class="fa-regular fa-award"></i> My Experience</h2>
+                    </div>
+
+                    <div class="resume-widget">
+                        <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-1">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2020 -
+                                Present</div>
+                            <h3 class="resume-title">Senior Frontend Developer</h3>
+                            <div class="institute">Systematic Solutions Co.,Ltd.</div>
+                        </div>
+                        <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-2">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2019 -
+                                2020</div>
+                            <h3 class="resume-title">Remote Wordpress Developer</h3>
+                            <div class="institute">Imedia Co.,Ltd.</div>
+                        </div>
+                        <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-3">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2017 - 2018</div>
+                            <h3 class="resume-title">Web Designer</h3>
+                            <div class="institute">Evolxit Co.,Ltd.</div>
+                        </div>
+                        <div class="resume-single mb--0 tmp-scroll-trigger tmp-fade-in animation-order-4">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2017 -
+                                2016</div>
+                            <h3 class="resume-title">Intern Web Designer</h3>
+                            <div class="institute">Myanmar Net Co.,Ltd.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="section-header mb--50 tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        <h2 class="section-title"> <i class="fa-regular fa-graduation-cap"></i> My Education</h2>
+                    </div>
+
+                    <div class="resume-widget">
+                        <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-1">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i>2018</div>
+                            <h3 class="resume-title">Bachelor of Engineering(IT)</h3>
+                            <div class="institute">West Yangon Technological University</div>
+                        </div>
+                        <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-2">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2016</div>
+                            <h3 class="resume-title">Bachelor of Technology(IT)</h3>
+                            <div class="institute">West Yangon Technological University</div>
+                        </div>
+                        <div class="resume-single tmp-scroll-trigger tmp-fade-in animation-order-3">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2021</div>
+                            <h3 class="resume-title">Web Design Course</h3>
+                            <div class="institute">M3WI Education</div>
+                        </div>
+                        <div class="resume-single mb--0 tmp-scroll-trigger tmp-fade-in animation-order-4">
+                            <div class="time"><i class="fa-duotone fa-solid fa-circle-dot fa-fade mr--15"></i> 2022</div>
+                            <h3 class="resume-title">Frontend Web Development</h3>
+                            <div class="institute">Creative Coder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- tmp skill area start -->
+    <div class="tmp-skill-area tmp-section-gapTop">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-12">
+                       <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                Professional Skills <span><img src="../assets/images/images/custom-line.png" alt="custom-line"></span>
+                            </h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="progress-wrapper">
+                        <div class="content">
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                   Angular</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    Vue/React</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                             <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    Javascript</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                             <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    Wordpress</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="progress-wrapper">
+                        <div class="content">
+                            <!-- <h2 class="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                Development Skill <span><img src="../assets/images/images/custom-line.png" alt="custom-line"></span>
+                            </h2> -->
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    HTML</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    CSS</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%; visibility: visible; animation-duration: 0.6s; animation-delay: 0.4s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                           
+
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    Figma/Adobe XD</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                                <h6 class="heading heading-h6">
+                                    Git</h6>
+                                <div class="progress">
+                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="percent-label">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tmp skill area end -->
+
+    <!-- tmp Latest Portfolio Start -->
+    <section class="latest-portfolio-area custom-column-grid tmp-section-gap">
+        <div class="container">
+            <div class="section-head mb--60">
+                <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <span class="subtitle">Latest Portfolio</span>
+                </div>
+                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2"> My Cases </h2>
+                <!-- <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">Business consulting
+                    consultants provide expert advice and guida
+                    businesses to help them improve their performance, efficiency, and organizational</p> -->
+            </div>
+            <div class="latest-portfolio-tabs-area">
+                <!-- <nav>
+                    <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <li>
+                            <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab" data-bs-target="#nav-branding" type="button" role="tab" aria-controls="nav-branding" aria-selected="false">Branding</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="false">Design</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-content-writing-tab" data-bs-toggle="tab" data-bs-target="#nav-content-writing" type="button" role="tab" aria-controls="nav-content-writing" aria-selected="false">Content writing</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-marketing-tab" data-bs-toggle="tab" data-bs-target="#nav-marketing" type="button" role="tab" aria-controls="nav-marketing" aria-selected="false">Marketing</button>
+                        </li>
+                    </ul>
+                </nav> -->
+                <div class="tab-content bg-blur-style-one" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="https://www.jobclick.com.mm/home">
+                                                <img class="w-100" src="../assets/images/portfolio1.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="https://www.jobclick.com.mm/home">Job Search Portal</a></h3>
+                                        </div>
+
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="https://www.jobclick.com.mm/home">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="https://kudostoyou.com.mm/home">
+                                                <img class="w-100" src="../assets/images/portfolio2.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="https://kudostoyou.com.mm/home">Learning Online Portal</a></h3>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="https://kudostoyou.com.mm/home">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="https://soesanrealestate.com.mm/">
+                                                <img class="w-100" src="../assets/images/portfolio3.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="https://soesanrealestate.com.mm/">Real Estate Portal</a></h3>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="https://soesanrealestate.com.mm/">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="https://ticket.com.mm/">
+                                                <img class="w-100" src="../assets/images/portfolio4.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="https://ticket.com.mm/">Air Ticketing</a></h3>
+                                           
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="https://ticket.com.mm/">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="#">
+                                                <img class="w-100" src="../assets/images/portfolio6.png" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="#">ERP Product</a></h3>
+                                           
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="#">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="https://gaullacmommyanmar.com/">
+                                                <img class="w-100" src="../assets/images/portfolio5.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="https://gaullacmommyanmar.com/">Gaullac Website</a></h3>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="https://gaullacmommyanmar.com/">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="tab-pane fade" id="nav-branding" role="tabpanel" aria-labelledby="nav-branding-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-1.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-3.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Ai</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-4.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Framer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Wordpress</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-2.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-1.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-3.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Ai</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-4.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Framer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Wordpress</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-2.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-content-writing" role="tabpanel" aria-labelledby="nav-content-writing-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-1.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-3.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Ai</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-4.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Framer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Wordpress</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-2.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-marketing" role="tabpanel" aria-labelledby="nav-marketing-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-1.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">SAAS website
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-3.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Ai</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-4.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Workout App
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Figma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Framer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Wordpress</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="latest-portfolio-card-style-two image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="portfoli-card-img">
+                                        <div class="img-box v2">
+                                            <a class="tmp-scroll-trigger tmp-zoom-in animation-order-1" href="project-details.html">
+                                                <img class="w-100" src="../assets/images/images/portfoli-img-2.jpg" alt="Thumbnail">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <h3 class="portfolio-card-title"><a href="project-details.html">Dashboard
+                                                    design</a></h3>
+                                            <div class="tag-items">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Adobe</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="tag-item">Webflow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="tmp-btn hover-icon-reverse radius-round btn-border btn-md" href="project-details.html">
+                                            <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">View design</span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <a class="tmp-btn hover-icon-reverse radius-round" @click="scrollToPortfolio">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">More About Us</span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    </span>
+                                </a>
+        </div>
+    </section>
+    <!-- tmp Latest Portfolio end -->
+
+    <!-- Tpm Get In touch start -->
+    <section class="get-in-touch-area tmp-section-gapTop">
+        <div class="container">
+            <div class="get-in-touch-wrapper tmponhover">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-12">
+                        <div class="contact-inner">
+                            <div class="section-head section-head-one-side text-align-center tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <span class="title-left">Get Ready To Create Great</span>
+                            </div>
+                            <ul class="ft-link v2">
+                                <li class="tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-link-animation">
+                                    <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span>
+                                    <div class="ft-link-wrap">
+                                        <h4 class="link-title">E-mail:</h4>
+                                        <a href="#">yuwahtetaung6@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li class="tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                    <div class="ft-link-wrap">
+                                        <h4 class="link-title">Location:</h4>
+                                        <div>Yangon, Myanmar.</div>
+                                    </div>
+                                </li>
+                                <li class="tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                    <div class="ft-link-wrap">
+                                        <h4 class="link-title">Contact:</h4>
+                                        <div>+959 4421 488 68</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tpm Get In touch End -->
 </template>
-<script>
-import { ref } from "vue"
-import Typed from "typed.js"
-import Header from "../components/Header"
-import { DotLottieVue } from "@lottiefiles/dotlottie-vue"
-export default {
-    setup() {
-      const activeTab = ref("overview")
-      return { activeTab }
-   },
-   components: {
-      Header,
-      DotLottieVue,
-   },
-   name: "TypingEffect",
-   methods: {
-      goToAbout() {
-         this.$router.push('/allprojects');
-      },
-      scrollToPortfolio() {
-         const el = document.getElementById("portfolio");
-         if (el) {
-         el.scrollIntoView({ behavior: "smooth" });
-         }
-      }
-   },
-   mounted() {
-      const options = {
-         strings: [
-            "",
-            "Frontend Developer",
-            "Wordpress Developer",
-            "Web Designer",
-         ],
-         typeSpeed: 100,
-         backSpeed: 40,
-         loop: true,
-      }
+<script setup>
+import { ref, onMounted, onUnmounted  } from 'vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { SplitText } from 'gsap/SplitText'   // needs a Club GreenSock license
 
-      this.typed = new Typed(this.$refs.typedElement, options)
-   },
-   beforeUnmount() {
-      // Clean up the Typed instance
-      if (this.typed) this.typed.destroy()
-   },
+/* ─── refs to DOM elements ─────────────────────────────── */
+const box = ref(null)   // <section class="cards">
+const scrollSplit = ref(null)   // <h2 class="scrollSplit">
+
+const isMenuActive = ref(false)
+const toggleMenu = () => {
+    isMenuActive.value = !isMenuActive.value
 }
+const closeMenu = () => {
+    isMenuActive.value = false
+}
+
+/* ─── GSAP setup ────────────────────────────────────────── */
+gsap.registerPlugin(ScrollTrigger, SplitText)
+
+onMounted(() => {
+  /* 1 ▸  fade / slide the cards in one by one */
+  gsap.utils.toArray(box.value.children).forEach(card => {
+    gsap.from(card, {
+      scrollTrigger: {
+        trigger: ".box",
+        start: "top 85%",
+        toggleActions: "play none none none",
+        markers: false
+    },
+    y: 120,
+    opacity: 0,
+    scale: 0.5,
+    duration: 2,
+    ease: "back.out(1.7)",
+    })
+  })
+
+  /* 2 ▸  Split the scrollSplit into lines and animate each one */
+  const split = new SplitText(scrollSplit.value, {
+    type: 'lines',
+    linesClass: 'line',   // → <div class="line">…</div>
+  })
+
+  gsap.from(split.lines, {
+    scrollTrigger: {
+      trigger: scrollSplit.value,
+      start: 'top 90%',
+      toggleActions: 'play none none none',
+    },
+    yPercent: 300,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.6,
+    ease: 'expo.out',
+  })
+
+
+})
+
 </script>
 <style>
-.fade-enter-active,
-.fade-leave-active {
-   transition: opacity 0.3s ease;
+ul.ft-link{
+    display:flex;
+    justify-content:center;
+    column-gap:60px;
 }
-.fade-enter-from,
-.fade-leave-to {
-   opacity: 0;
+.ft-link.v2 li:last-child {
+    margin-bottom: 22px;
+}
+.text-para-doc-wrap .text-para-documents{
+    font-size:38px;
+}
+.latest-portfolio-card-style-two .portfolio-card-title{
+    font-size:20px;
+}
+.latest-portfolio-card-style-two .portfolio-card-content-wrap{
+    align-items: center;
+}
+.tmp-btn.btn-md.btn-border{
+    line-height:39px;
+}
+.tmp-btn.btn-md{
+    height: 40px;
+    padding: 0 15px;
+}
+.img-box.v2{
+    height: auto;
+}
+.latest-portfolio-tabs-area .tab-content img{
+    height: 240px;
+}
+.banner-two-main-wrapper .banner-right-content .main-img .banner-big-text-2{
+    font-size: 70px;
+}
+.banner-two-main-wrapper .banner-right-content .main-img .banner-big-text-1{
+    font-size:70px;
 }
 
-.prj-item > .zoomin > img {
-        
-         height:230px;
-         object-fit: cover;
-   
-   }
-
-   a.btn{
-      transition: all 0.2s ease-in-out;
-   }
-
-   a.btn:hover{
-      background-color: #29a587;
-      color: #fff !important;
-   }
-
-   /* .fg-image{
-        width: 300px;
-      height: auto;
-      transition: transform 0.3s ease;
-    }
-
-    .fg-image:hover {
-      animation: smoothShake 1s infinite;
-    }
-
-    @keyframes smoothShake {
-      0%   { transform: translate(0px, 0px); }
-      25%  { transform: translate(2px, -2px); }
-      50%  { transform: translate(-2px, 2px); }
-      75%  { transform: translate(2px, 2px); }
-      100% { transform: translate(0px, 0px); }
-   } */
-
-@media only screen and (max-width: 767px) {
-   .dashboard_{
-        display:unset;
-    }
+/* text animation */
+.wrapper {
+  display: inline-flex;
+  align-items: center;
 }
+
+.static-txt {
+  color: #fff;
+  font-size: 45px;
+}
+
+.dynamic-txts {
+  list-style: none;
+  margin-left: 0px;
+  position: relative;
+  height: 60px;
+  width: 400px; /* Fix width for consistent effect */
+}
+
+.dynamic-txts li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-primary);
+  font-size: 45px;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid pink;
+  animation: type 12s steps(30) infinite;
+}
+
+.dynamic-txts li:nth-child(1) {
+  animation-delay: 0s;
+}
+.dynamic-txts li:nth-child(2) {
+  animation-delay: 3s;
+}
+.dynamic-txts li:nth-child(3) {
+  animation-delay: 6s;
+}
+.dynamic-txts li:nth-child(4) {
+  animation-delay: 9s;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    width: 100%;
+    opacity: 1;
+  }
+  25% {
+    width: 100%;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+
 </style>

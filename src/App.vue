@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref , onMounted } from 'vue'
 import Loader from './views/Loader.vue'
 
 const loading = ref(true)
